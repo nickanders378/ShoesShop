@@ -1,47 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="/script.js">
+    <title>Loja de Tênis</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Cursos</h1>
-        <nav><a href="#sobre o curso" sobre o curso></a>
-        <nav><a href="#benefícios" benefícios></a>
-        <nav><a href="#Depoimentos" depoimentos></a>
-        <nav><a href="#Preço" preço></a>
-        </nav>
+        <div class="container">
+            <h1>Loja de Tênis</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </header>
-    <section id="sobre">
-        <h2>sobre o curso</h2>
-        <p></p>
-    </section>
-    <section id="benefícios">
-        <ul>
-            <li>benefício 1</li>
-            <li>benefício 2</li>
-            <li>benefício 3</li>
-            <li>benefício 4</li>
-        </ul>
-    </section>
-    <section id="depoimentos">
-        <blockquote>
-            <p> pessoa falando sobre o curso</p>
-            <cite>Nicollas</cite>
-        </blockquote>
+
+    <section id="destaques" class="section">
+        <div class="container">
+            <h2>Destaques</h2>
+            <div class="produtos-grid" id="destaques-grid">
+                <!-- Produtos em destaque serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
     </section>
 
-    <section id="preços">
-        <h2>preço</h2>
-        <p>valor do curso: 1.000</p>
-        <button id="comprar"> Comprar agora </button>
+    <section id="categorias" class="section">
+        <div class="container">
+            <h2>Categorias</h2>
+            <div class="categorias-grid" id="categorias-grid">
+                <!-- Categorias de produtos serão inseridas aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="promocoes" class="section">
+        <div class="container">
+            <h2>Promoções</h2>
+            <div class="produtos-grid" id="promocoes-grid">
+                <!-- Produtos em promoção serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos-carousel" id="depoimentos-carousel">
+                <!-- Depoimentos de clientes serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; Todos os direitos reservados</p>
+        <div class="container">
+            <p>&copy; 2023 Loja de Tênis. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
